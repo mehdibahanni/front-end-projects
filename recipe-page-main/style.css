@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+  }
+  :root{
+    /* primary */
+  --Nutmeg: hsl(14, 45%, 36%);
+  --Dark-Raspberry: hsl(332, 51%, 32%);
+  
+    /* Neutral */
+  --White: hsl(0, 0%, 100%);
+  --Rose-White: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --Light-Grey: hsl(30, 18%, 87%);
+  --Wenge-Brown: hsl(30, 10%, 34%);
+  --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+body{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--Light-Grey);
+}
+.main{
+    width: 750px;
+    margin-top: 50px;
+    max-width: 760px;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 30px;
+    background-color: var(--White);
+}
+.container{
+    width: 100%;
+    height: 100%;
+    padding: 0 30px;
+}
+.main .img{
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.main .img img{
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.title{
+  color: var(--Nutmeg);
+}
+.title.preparation-title{
+  color: var(--Dark-Charcoal);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+.info-title{
+  padding: 10px 0;
+}      
+.info-title .title.info-title{
+    color: black;
+    padding: 10px 0;
+    font-size: 2rem;
+    font-weight: 900;
+}
+.info-title .pargraph-info{
+    
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 10px 0;
+    line-height: 20px;
+}
+.preparation{
+    background-color: var(--Rose-White);
+    padding: 15px;
+    border-radius: 9px;
+    
+}
+.preparation .title.preparation-title{
+    color: var(--Dark-Raspberry);
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+.preparation ul {
+    padding: 0 30px;
+    font-size: 0.99rem;
+}
+.preparation ul li{
+    padding: 9px 10px;
+}
+.title{
+    font-size: 1.9rem;
+    padding: 10px 0;
+    color: var(--Nutmeg);
+}
+.ingredient ul{
+    padding: 0 20px; 
+    font-size: 0.9rem;
+    font-weight: 600;
+    
+}
+.ingredient ul li p{
+    padding: 5px 10px;
+}
+hr{
+    width: 100%;
+    margin: 20px 0;
+    size: 1px;
+    color: var(--Eggshell);
+}
+.instruction p{
+    padding: 10px 0;
+}
+.instruction p .dots{
+    padding-right: 10px;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--Nutmeg);
+}
+.nutrition .table{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px 0;
+}
+.nutrition .table div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--Eggshell);
+}
+.nutrition .table div span{
+    width: 50%;
+    color: var(--Nutmeg);
+    font-weight: 600;
+}
+.nutrition .table div p{
+    width: 50%;
+    padding-left: 20px;
+}
+@media(max-width:475px){
+    .main{
+        max-width: 375px;
+        min-width: 375px;
+        height: 100%;
+        padding: 0;
+        overflow: visible;
+        margin-top: 0;
+        border-radius: 1px;
+    }
+    .main .img{
+        border-radius: 1px;
+    }
+}

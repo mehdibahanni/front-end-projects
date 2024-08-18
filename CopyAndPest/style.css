@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: blueviolet;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    font-family: sans-serif;
+}
+.input-erea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid white;
+}
+.button{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.btn-copy{
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+    border-radius: 7px;
+    border: none;
+}
+.btn-move{
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+    border-radius: 7px;
+    border: none;
+}
+.output-erea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px solid white;
+}
+.add{
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    background-color: #000;
+    width: 100px;
+    height: 45px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+textarea{
+    outline: none;
+    padding: 20px;
+}

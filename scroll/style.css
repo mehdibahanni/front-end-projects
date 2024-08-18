@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    padding: 40px;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    font-style: unset;
+}
+section{
+    margin: 20px 0;
+    border: solid 2px white;
+    padding: 20px;
+    /* text-align: center; */
+}
+section h1{
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 40px;
+}
+.scroll-indicator{
+    width: calc(100% - 3rem);
+    height: 6px;
+    border-radius: 3px;
+    top: 10px;
+    position: fixed;
+}
+.scroll-indicator .progress{
+    background: linear-gradient(30deg, #21d4fd, #b721ff);
+    height: 100%;
+    width: 12px;
+    border-radius: 3px;
+}
+/* background: linear-gradient(30deg, #21d4fd, #b721fff); */

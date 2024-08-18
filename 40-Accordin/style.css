@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+.Accordin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 5em 4em;
+    margin-top: 20px;
+}
+.title{
+    text-align: center;
+    font-size: 1.7rem;
+    color: #fff;
+    font-weight: 700;
+    padding: 20px;
+}
+.accordin-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    cursor: pointer;
+}
+.accordin-title-item{
+    font-size: 1.2rem;
+    color: #fff;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    height: 34px;
+    width: 34px;
+    border: 2px solid;
+    border-radius: 100%;
+    position: relative;
+    border-color: white;
+}
+.icon::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 14px;
+    background-color: white;
+    transition: 0.3s;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    pointer-events: all;
+}
+.icon::before{
+    content: "";
+    position: absolute;
+    height: 14px;
+    width: 2px;
+    background-color: white;
+    transition: 0.3s;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    pointer-events: all;
+}
+.accordin-header.active > .icon::before{
+    transform: rotate(90deg);
+}
+.accordin-header.active > .icon::after{
+    transform: rotate(180deg);
+}
+.accordin-body{
+    width: 80%;
+    display: flex;
+    justify-content: left;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+.accordin-body-item{
+    color: #fff;
+    font-size: 1.1em;
+    line-height: 25px;
+}
+.divider{
+    width: 100%;
+    height: 1px;
+    margin: 20px 0 20px 0;
+    background-color: #fff;
+}
+.accordin-body.active{
+    min-height: 100px;    
+}

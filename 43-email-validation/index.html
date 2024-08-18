@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>email validation</title>
+</head>
+<body>
+
+    <form action="#">
+        <input type="text" placeholder="Enter Email...">
+    </form>
+    <script>
+    let input = document.querySelector('input');
+        input.addEventListener('keydown', validation);
+        
+        function validation(){
+            console.log('don')
+            let form = document.querySelector('form');
+            console.log(form)
+            let pattren = '@';
+        
+            if(input.value.match(pattren)){
+                form.classList.remove('invalid');
+                form.classList.add('valid');
+            }else{
+                form.classList.remove('invalid');
+                form.classList.add('valid');
+            }
+        }
+
+    </script>
+</body>
+</html>

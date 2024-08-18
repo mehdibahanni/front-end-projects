@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+.div{
+    width: 400px;
+    height: 50px;
+    background-color: gray;
+    border-radius: 10px;
+    padding: 0;
+    display: flex;
+    margin: 0;
+    position: relative;
+
+}
+.button{
+    /* position: absolute; */
+    width: 15%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    justify-self: flex-start;
+    align-self: flex-start;
+    border: none;
+    border-radius: 0 10px 10px 0;
+}
+#input{
+    /* position: absolute;  */
+    width: 85%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    text-align: center;
+    border-radius: 10px 0px 0px 10px;
+}
+    </style>
+</head>
+<body>
+    <div class="div">
+        <input id="input" mehdi="list" placeholder="enter somthing" type="text">
+        <button class="button">enter</button>
+    </div>
+    <script src="search.js"></script>
+</body>
+</html>

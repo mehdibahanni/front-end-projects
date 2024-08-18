@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&display=swap');
+
+:root {
+    --font: "Poppins", sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #444;
+    font-family: var(--font);
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.contianer{
+    max-width: 600px;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: #a4a4a4;
+    font-size: 20px;
+    font-weight: 400;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;   
+    padding: 1.75em 0;
+}
+li a.active{
+    color: #444;
+    padding-bottom: 0.63em;
+    border-bottom: 3px solid #444;
+}
+li a:hover{
+    color: #444;
+    padding-bottom: 0.63em;
+    border-bottom: 3px solid #444;
+}
+.wrapper_tab-content{
+    position: relative;
+}
+.tab-content{
+    position: absolute;
+    visibility: hidden;
+    height: 0;
+}
+h2{
+    padding: 0.63em 0;
+}
+p{
+    line-height: 28px;
+    font-size: 17px;
+}
+.tab-content.content-visible{
+    visibility: visible;
+    position: static;
+}

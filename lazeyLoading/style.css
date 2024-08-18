@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.background{
+    background-image: url("https://wallpapers.com/images/featured/laptop-murjp1nk4lp1idlt.jpg");
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    z-index: -1;
+    fill: blue(0);
+}
+.load-text{
+    font-size: 40px;
+    color: white;
+}

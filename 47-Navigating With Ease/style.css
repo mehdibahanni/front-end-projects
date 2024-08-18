@@ -1,0 +1,140 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: sans-serif;
+}
+:root{
+    --background-darck: #222;
+    --background-white: rgb(230, 229, 229);
+}
+a{
+    text-decoration: none;
+    color: white;
+    padding: 7px 15px;
+    transition: all 0.3s ease-in-out;
+}
+body{
+    color: var(--background-darck);
+    padding-top: 50px;
+    background-color: #222;
+    transition: all 0.9s smooth;
+}
+
+.nav{
+    background-color: #222;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
+.nav .contianer{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    transition: all 0.3s ease;
+}
+.nav .contianer ul{
+    display: flex;
+    gap: 20px;
+}
+/* ---------    javaScript  -------------- */
+.nav.active {
+    background-color: white;
+}
+.nav.active a{
+    color: #222;
+    
+}
+
+/* --------------- */
+.hero{
+    height: 100vh;
+    background: url('https://w0.peakpx.com/wallpaper/246/890/HD-wallpaper-road-between-green-trees-forest-under-white-clouds-sky-8k-nature.jpg') no-repeat;
+    background-size: cover;
+    display: flex;
+    background-position: bottom center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-attachment: fixed;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: -2;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.7);
+}
+.hero::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.hero h1{
+    font-size: 50px;
+    margin: -20px 0 10px;
+}
+.hero p{
+    line-height: 40px;
+    max-width: 700px;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+.prodcuts,
+.content-contianer{
+    display: grid;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 100px;
+    opacity: 0;
+    transition: all 0.9s ease-in-out;
+    height: 100vh;
+}
+.content-contianer > .content{
+    background-color: rgb(192, 192, 192);
+    padding: 20px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.7);
+    height: max-content;
+    width: 350px;
+    transition: all 0.9s ease-in-out;
+}
+
+.prodcuts{
+    height: 100vh;
+    display: grid;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 100px;
+    opacity: 0;
+    transition: all 0.9s ease-in-out;
+    height: 100vh;
+}
+.prodcuts .content{
+    background-color: rgb(192, 192, 192);
+    padding: 20px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.7);
+    height: max-content;
+    width: 350px;
+    transition: all 0.9s ease-in-out;
+}

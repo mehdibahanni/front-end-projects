@@ -1,0 +1,97 @@
+:root{
+    --modal-durtion: 1s;
+}
+body{
+    font-family: sans-serif;
+    margin: 0;
+    transition: transform 0.3s ease;
+}
+header{
+    background-image: url("https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg?auto=compress&cs=tinysrgb&w=300") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.content-contianer h2 {
+    font-size: 3rem;
+    color: rgb(255, 254, 254);
+    margin-bottom: 60px;
+}
+.content-contianer p{
+    color: white;
+    width: 800px;
+    line-height: 25px;
+    font-size: 18px;
+}
+.open-btn{
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    background-color: crimson;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.modal-contianer{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.modal{
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    max-height: 100%;
+    width: 400px;
+    padding: 20px;
+}
+/* .modal-content{
+    padding: 20px;
+} */
+.modal-form div{
+    margin: 20px 0;
+}
+.modal-form label{
+    display: block;
+    margin-bottom: 6px;
+}
+.modal-form .form-input{
+    width: 95%;
+    padding: 8px;
+}
+.close-btn{
+    background: transparent;
+    border: none;
+    font-size: 25px;
+    position: absolute;
+    top: 5px;
+    right: 12px;
+    cursor: pointer;
+}
+.submit-btn{
+    padding: 10px 30px;
+    font-weight: bold;
+    background: crimson;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+/* JavaScirpt */
+.modal-contianer.show-modal{
+    display: block;
+}

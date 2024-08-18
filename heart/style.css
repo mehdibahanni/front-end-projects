@@ -1,0 +1,41 @@
+body{
+    background: blueviolet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+button {
+    padding: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-weight: 200;
+    font-size: 20px;
+    transition:  0.8s cubic-bezier(0.175,0.885, 0.32, 1.275);
+    cursor: pointer;
+}
+button:hover{
+    background: white;
+    color: black;
+}
+button:active{
+    padding: 15px;
+}
+span{
+    top: 51%;
+    position: fixed;
+    color: white;
+    font-size: 25px;
+}
+/* transitions: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) */
+/* bluevoilet: #8a2be2 */
+
+/* transiations : 0.8s cubic-bezier(0.175,0.885, 0.32, 1.275) */
+
+
+
+
+

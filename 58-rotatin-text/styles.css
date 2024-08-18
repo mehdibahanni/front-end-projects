@@ -1,0 +1,60 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.out-of-header {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.out-of-header h2 {
+    font-size: 45px;
+    line-height: 50px;
+}
+
+.in-of-header {
+    height: 50px;
+    overflow: hidden;
+}
+
+span {
+    position: relative;
+    text-transform: uppercase;
+    display: block;
+    color: crimson;
+    animation: animation 10s ease infinite;
+}
+
+@keyframes animation {
+    0%, 100% {
+        top: 0;
+    }
+    20% {
+        top: 0;
+    }
+    25% {
+        top: -50px;
+    }
+    45% {
+        top: 100px;
+    }
+    50% {
+        top: -100px;
+    }
+    70% {
+        top: -100px;
+    }
+    75% {
+        top: -150px;
+    }
+    95% {
+        top: -150px;
+    }
+}
